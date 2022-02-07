@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		481E09D227B0D7240041F93A /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481E09D127B0D7240041F93A /* ErrorHandler.swift */; };
 		4846E7B127ABE30300B3F89E /* plan_iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4846E7B027ABE30300B3F89E /* plan_iosApp.swift */; };
 		4846E7B527ABE30500B3F89E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4846E7B427ABE30500B3F89E /* Assets.xcassets */; };
 		4846E7B827ABE30500B3F89E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4846E7B727ABE30500B3F89E /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		481E09D127B0D7240041F93A /* ErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
 		4846E7AD27ABE30300B3F89E /* plan-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "plan-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4846E7B027ABE30300B3F89E /* plan_iosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = plan_iosApp.swift; sourceTree = "<group>"; };
 		4846E7B427ABE30500B3F89E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 		4873C0E427B08F6A004F4126 /* ErrorHandlers */ = {
 			isa = PBXGroup;
 			children = (
+				481E09D127B0D7240041F93A /* ErrorHandler.swift */,
 			);
 			path = ErrorHandlers;
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4846E7B127ABE30300B3F89E /* plan_iosApp.swift in Sources */,
+				481E09D227B0D7240041F93A /* ErrorHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
