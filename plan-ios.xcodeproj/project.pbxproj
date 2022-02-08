@@ -102,7 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				4873C0E327B08C15004F4126 /* Entity */,
-				4873C0E227B08B9D004F4126 /* BaseRest */,
+				4873C0E227B08B9D004F4126 /* Rest */,
 				4873C0E127B08B6B004F4126 /* Api */,
 			);
 			path = Client;
@@ -137,7 +137,7 @@
 			path = Api;
 			sourceTree = "<group>";
 		};
-		4873C0E227B08B9D004F4126 /* BaseRest */ = {
+		4873C0E227B08B9D004F4126 /* Rest */ = {
 			isa = PBXGroup;
 			children = (
 				481E09D327B10EF40041F93A /* RestTemplate.swift */,
@@ -145,7 +145,7 @@
 				481E09D827B12D3A0041F93A /* HeaderProtocol.swift */,
 				4875E45727B20A8A00F7BC5E /* ResponseErrorCreator.swift */,
 			);
-			path = BaseRest;
+			path = Rest;
 			sourceTree = "<group>";
 		};
 		4873C0E327B08C15004F4126 /* Entity */ = {
