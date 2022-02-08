@@ -8,17 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		481E09D227B0D7240041F93A /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481E09D127B0D7240041F93A /* ErrorHandler.swift */; };
+		481E09D427B10EF40041F93A /* RestTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481E09D327B10EF40041F93A /* RestTemplate.swift */; };
+		481E09D727B12CA20041F93A /* RequestParametersProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481E09D627B12CA20041F93A /* RequestParametersProtocol.swift */; };
+		481E09D927B12D3A0041F93A /* HeaderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481E09D827B12D3A0041F93A /* HeaderProtocol.swift */; };
+		481E09DC27B1302F0041F93A /* DeferredFuture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481E09DB27B1302F0041F93A /* DeferredFuture.swift */; };
 		4846E7B127ABE30300B3F89E /* plan_iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4846E7B027ABE30300B3F89E /* plan_iosApp.swift */; };
 		4846E7B527ABE30500B3F89E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4846E7B427ABE30500B3F89E /* Assets.xcassets */; };
 		4846E7B827ABE30500B3F89E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4846E7B727ABE30500B3F89E /* Preview Assets.xcassets */; };
+		4875E45827B20A8A00F7BC5E /* ResponseErrorCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4875E45727B20A8A00F7BC5E /* ResponseErrorCreator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		481E09D127B0D7240041F93A /* ErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
+		481E09D327B10EF40041F93A /* RestTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestTemplate.swift; sourceTree = "<group>"; };
+		481E09D627B12CA20041F93A /* RequestParametersProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestParametersProtocol.swift; sourceTree = "<group>"; };
+		481E09D827B12D3A0041F93A /* HeaderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderProtocol.swift; sourceTree = "<group>"; };
+		481E09DB27B1302F0041F93A /* DeferredFuture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeferredFuture.swift; sourceTree = "<group>"; };
 		4846E7AD27ABE30300B3F89E /* plan-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "plan-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4846E7B027ABE30300B3F89E /* plan_iosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = plan_iosApp.swift; sourceTree = "<group>"; };
 		4846E7B427ABE30500B3F89E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4846E7B727ABE30500B3F89E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4875E45727B20A8A00F7BC5E /* ResponseErrorCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseErrorCreator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +42,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		481E09D527B12C790041F93A /* V1 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = V1;
+			sourceTree = "<group>";
+		};
+		481E09DA27B130030041F93A /* Publishers */ = {
+			isa = PBXGroup;
+			children = (
+				481E09DB27B1302F0041F93A /* DeferredFuture.swift */,
+			);
+			path = Publishers;
+			sourceTree = "<group>";
+		};
 		4846E7A427ABE30300B3F89E = {
 			isa = PBXGroup;
 			children = (
@@ -51,6 +76,8 @@
 		4846E7AF27ABE30300B3F89E /* plan-ios */ = {
 			isa = PBXGroup;
 			children = (
+				4875E45927B2A99B00F7BC5E /* Utility */,
+				481E09DA27B130030041F93A /* Publishers */,
 				4873C0E427B08F6A004F4126 /* ErrorHandlers */,
 				4873C0E027B08B58004F4126 /* Views */,
 				4873C0DF27B08B3C004F4126 /* Models */,
@@ -75,7 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				4873C0E327B08C15004F4126 /* Entity */,
-				4873C0E227B08B9D004F4126 /* Rest */,
+				4873C0E227B08B9D004F4126 /* BaseRest */,
 				4873C0E127B08B6B004F4126 /* Api */,
 			);
 			path = Client;
@@ -105,15 +132,20 @@
 		4873C0E127B08B6B004F4126 /* Api */ = {
 			isa = PBXGroup;
 			children = (
+				481E09D527B12C790041F93A /* V1 */,
 			);
 			path = Api;
 			sourceTree = "<group>";
 		};
-		4873C0E227B08B9D004F4126 /* Rest */ = {
+		4873C0E227B08B9D004F4126 /* BaseRest */ = {
 			isa = PBXGroup;
 			children = (
+				481E09D327B10EF40041F93A /* RestTemplate.swift */,
+				481E09D627B12CA20041F93A /* RequestParametersProtocol.swift */,
+				481E09D827B12D3A0041F93A /* HeaderProtocol.swift */,
+				4875E45727B20A8A00F7BC5E /* ResponseErrorCreator.swift */,
 			);
-			path = Rest;
+			path = BaseRest;
 			sourceTree = "<group>";
 		};
 		4873C0E327B08C15004F4126 /* Entity */ = {
@@ -129,6 +161,13 @@
 				481E09D127B0D7240041F93A /* ErrorHandler.swift */,
 			);
 			path = ErrorHandlers;
+			sourceTree = "<group>";
+		};
+		4875E45927B2A99B00F7BC5E /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,8 +240,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4875E45827B20A8A00F7BC5E /* ResponseErrorCreator.swift in Sources */,
+				481E09D927B12D3A0041F93A /* HeaderProtocol.swift in Sources */,
 				4846E7B127ABE30300B3F89E /* plan_iosApp.swift in Sources */,
+				481E09D427B10EF40041F93A /* RestTemplate.swift in Sources */,
 				481E09D227B0D7240041F93A /* ErrorHandler.swift in Sources */,
+				481E09DC27B1302F0041F93A /* DeferredFuture.swift in Sources */,
+				481E09D727B12CA20041F93A /* RequestParametersProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
