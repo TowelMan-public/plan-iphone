@@ -8,20 +8,18 @@
 import Foundation
 
 class RequestParameters: Codable{
-    private var paramaters: [String: String] = [:]
-    
-    var queryItems: [URLQueryItem]{
-        get{
-            var val: [URLQueryItem] = []
-            for (key, value) in self.paramaters {
+    func getQueryItems(encoder: JSONEncoder, decoder: JSONDecoder) -> [URLQueryItem]{
+        var val: [URLQueryItem] = []
+        
+        if let dataSelf = try? encoder.encode(self),
+           let dictionalSelf = try? decoder.decode(Dictionary<String, String>.self, from: dataSelf){
+            
+            for (key, value) in dictionalSelf {
                 val.append(.init(name: key, value: value))
             }
             
-            return val
         }
-    }
-    
-    func setValue<T>(key: String, value: T) where T : LosslessStringConvertible {
-        self.paramaters[key] = String(value)
+        
+        return val
     }
 }

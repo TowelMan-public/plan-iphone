@@ -12,10 +12,39 @@
 		481E09D727B12CA20041F93A /* RequestParametersProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481E09D627B12CA20041F93A /* RequestParametersProtocol.swift */; };
 		481E09D927B12D3A0041F93A /* HeaderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481E09D827B12D3A0041F93A /* HeaderProtocol.swift */; };
 		481E09DC27B1302F0041F93A /* DeferredFuture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481E09DB27B1302F0041F93A /* DeferredFuture.swift */; };
+		48200BB427B53C3A0086C214 /* PlanApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48200BB327B53C3A0086C214 /* PlanApi.swift */; };
+		48200BB627B53CF80086C214 /* ContentResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48200BB527B53CF80086C214 /* ContentResponse.swift */; };
+		48200BB827B53E050086C214 /* NoticeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48200BB727B53E050086C214 /* NoticeResponse.swift */; };
+		48200BBA27B5FBD20086C214 /* PrivateProjectResponsse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48200BB927B5FBD20086C214 /* PrivateProjectResponsse.swift */; };
+		48200BBC27B5FC4C0086C214 /* PublicProjectResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48200BBB27B5FC4C0086C214 /* PublicProjectResponse.swift */; };
+		48200BBE27B5FE0E0086C214 /* SubscriberInPublicProjectResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48200BBD27B5FE0E0086C214 /* SubscriberInPublicProjectResponse.swift */; };
+		48200BC027B5FE990086C214 /* TerminalResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48200BBF27B5FE990086C214 /* TerminalResponse.swift */; };
+		48200BC227B5FECB0086C214 /* TodoOnProjectResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48200BC127B5FECB0086C214 /* TodoOnProjectResponse.swift */; };
+		48200BC427B5FF650086C214 /* TodoOnResponsibleResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48200BC327B5FF650086C214 /* TodoOnResponsibleResponse.swift */; };
+		48200BC627B5FFF90086C214 /* TokenResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48200BC527B5FFF90086C214 /* TokenResponse.swift */; };
+		48200BC827B600710086C214 /* UserConfigResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48200BC727B600710086C214 /* UserConfigResponse.swift */; };
+		48200BCA27B601290086C214 /* UserInTodoOnResponsibleResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48200BC927B601290086C214 /* UserInTodoOnResponsibleResponse.swift */; };
+		48200BCC27B601770086C214 /* UserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48200BCB27B601770086C214 /* UserResponse.swift */; };
+		48200BCE27B605190086C214 /* V1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48200BCD27B605190086C214 /* V1.swift */; };
+		48200BD027B671280086C214 /* ContentV1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48200BCF27B671280086C214 /* ContentV1.swift */; };
+		48200BD227B726EA0086C214 /* VoidResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48200BD127B726EA0086C214 /* VoidResponse.swift */; };
+		48200BD427B7299A0086C214 /* NoticeV1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48200BD327B729990086C214 /* NoticeV1.swift */; };
+		48200BD627B72A980086C214 /* PrivateProjectV1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48200BD527B72A980086C214 /* PrivateProjectV1.swift */; };
+		48200BD827B72E7D0086C214 /* PublicProjectV1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48200BD727B72E7D0086C214 /* PublicProjectV1.swift */; };
+		48200BDA27B735740086C214 /* SubscriberV1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48200BD927B735740086C214 /* SubscriberV1.swift */; };
+		48200BDC27B73B1B0086C214 /* TerminalV1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48200BDB27B73B1B0086C214 /* TerminalV1.swift */; };
+		48200BDE27B73D990086C214 /* TodoV1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48200BDD27B73D990086C214 /* TodoV1.swift */; };
+		48200BE027B7EB0E0086C214 /* TodoOnResponsibleV1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48200BDF27B7EB0E0086C214 /* TodoOnResponsibleV1.swift */; };
+		48200BE227B7F04B0086C214 /* UserV1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48200BE127B7F04B0086C214 /* UserV1.swift */; };
+		48200BE427B7F7BC0086C214 /* UserConfigV1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48200BE327B7F7BC0086C214 /* UserConfigV1.swift */; };
 		4846E7B127ABE30300B3F89E /* plan_iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4846E7B027ABE30300B3F89E /* plan_iosApp.swift */; };
 		4846E7B527ABE30500B3F89E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4846E7B427ABE30500B3F89E /* Assets.xcassets */; };
 		4846E7B827ABE30500B3F89E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4846E7B727ABE30500B3F89E /* Preview Assets.xcassets */; };
 		4875E45827B20A8A00F7BC5E /* ResponseErrorCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4875E45727B20A8A00F7BC5E /* ResponseErrorCreator.swift */; };
+		4875E45D27B32E3D00F7BC5E /* ApiResponseErrorCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4875E45C27B32E3D00F7BC5E /* ApiResponseErrorCreator.swift */; };
+		4875E45F27B3B2DC00F7BC5E /* JWTHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4875E45E27B3B2DC00F7BC5E /* JWTHeader.swift */; };
+		4875E46127B4C8A300F7BC5E /* PlanBaseApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4875E46027B4C8A300F7BC5E /* PlanBaseApi.swift */; };
+		4875E46327B4CF8A00F7BC5E /* PlanRequestParamater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4875E46227B4CF8A00F7BC5E /* PlanRequestParamater.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,11 +53,40 @@
 		481E09D627B12CA20041F93A /* RequestParametersProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestParametersProtocol.swift; sourceTree = "<group>"; };
 		481E09D827B12D3A0041F93A /* HeaderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderProtocol.swift; sourceTree = "<group>"; };
 		481E09DB27B1302F0041F93A /* DeferredFuture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeferredFuture.swift; sourceTree = "<group>"; };
+		48200BB327B53C3A0086C214 /* PlanApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanApi.swift; sourceTree = "<group>"; };
+		48200BB527B53CF80086C214 /* ContentResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentResponse.swift; sourceTree = "<group>"; };
+		48200BB727B53E050086C214 /* NoticeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeResponse.swift; sourceTree = "<group>"; };
+		48200BB927B5FBD20086C214 /* PrivateProjectResponsse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateProjectResponsse.swift; sourceTree = "<group>"; };
+		48200BBB27B5FC4C0086C214 /* PublicProjectResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicProjectResponse.swift; sourceTree = "<group>"; };
+		48200BBD27B5FE0E0086C214 /* SubscriberInPublicProjectResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriberInPublicProjectResponse.swift; sourceTree = "<group>"; };
+		48200BBF27B5FE990086C214 /* TerminalResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerminalResponse.swift; sourceTree = "<group>"; };
+		48200BC127B5FECB0086C214 /* TodoOnProjectResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoOnProjectResponse.swift; sourceTree = "<group>"; };
+		48200BC327B5FF650086C214 /* TodoOnResponsibleResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoOnResponsibleResponse.swift; sourceTree = "<group>"; };
+		48200BC527B5FFF90086C214 /* TokenResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenResponse.swift; sourceTree = "<group>"; };
+		48200BC727B600710086C214 /* UserConfigResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserConfigResponse.swift; sourceTree = "<group>"; };
+		48200BC927B601290086C214 /* UserInTodoOnResponsibleResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInTodoOnResponsibleResponse.swift; sourceTree = "<group>"; };
+		48200BCB27B601770086C214 /* UserResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResponse.swift; sourceTree = "<group>"; };
+		48200BCD27B605190086C214 /* V1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = V1.swift; sourceTree = "<group>"; };
+		48200BCF27B671280086C214 /* ContentV1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentV1.swift; sourceTree = "<group>"; };
+		48200BD127B726EA0086C214 /* VoidResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoidResponse.swift; sourceTree = "<group>"; };
+		48200BD327B729990086C214 /* NoticeV1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeV1.swift; sourceTree = "<group>"; };
+		48200BD527B72A980086C214 /* PrivateProjectV1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateProjectV1.swift; sourceTree = "<group>"; };
+		48200BD727B72E7D0086C214 /* PublicProjectV1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicProjectV1.swift; sourceTree = "<group>"; };
+		48200BD927B735740086C214 /* SubscriberV1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriberV1.swift; sourceTree = "<group>"; };
+		48200BDB27B73B1B0086C214 /* TerminalV1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerminalV1.swift; sourceTree = "<group>"; };
+		48200BDD27B73D990086C214 /* TodoV1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoV1.swift; sourceTree = "<group>"; };
+		48200BDF27B7EB0E0086C214 /* TodoOnResponsibleV1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoOnResponsibleV1.swift; sourceTree = "<group>"; };
+		48200BE127B7F04B0086C214 /* UserV1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserV1.swift; sourceTree = "<group>"; };
+		48200BE327B7F7BC0086C214 /* UserConfigV1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserConfigV1.swift; sourceTree = "<group>"; };
 		4846E7AD27ABE30300B3F89E /* plan-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "plan-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4846E7B027ABE30300B3F89E /* plan_iosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = plan_iosApp.swift; sourceTree = "<group>"; };
 		4846E7B427ABE30500B3F89E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4846E7B727ABE30500B3F89E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4875E45727B20A8A00F7BC5E /* ResponseErrorCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseErrorCreator.swift; sourceTree = "<group>"; };
+		4875E45C27B32E3D00F7BC5E /* ApiResponseErrorCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResponseErrorCreator.swift; sourceTree = "<group>"; };
+		4875E45E27B3B2DC00F7BC5E /* JWTHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWTHeader.swift; sourceTree = "<group>"; };
+		4875E46027B4C8A300F7BC5E /* PlanBaseApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanBaseApi.swift; sourceTree = "<group>"; };
+		4875E46227B4CF8A00F7BC5E /* PlanRequestParamater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanRequestParamater.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +103,17 @@
 		481E09D527B12C790041F93A /* V1 */ = {
 			isa = PBXGroup;
 			children = (
+				48200BD327B729990086C214 /* NoticeV1.swift */,
+				48200BD527B72A980086C214 /* PrivateProjectV1.swift */,
+				48200BD727B72E7D0086C214 /* PublicProjectV1.swift */,
+				48200BD927B735740086C214 /* SubscriberV1.swift */,
+				48200BDB27B73B1B0086C214 /* TerminalV1.swift */,
+				48200BDD27B73D990086C214 /* TodoV1.swift */,
+				48200BDF27B7EB0E0086C214 /* TodoOnResponsibleV1.swift */,
+				48200BE127B7F04B0086C214 /* UserV1.swift */,
+				48200BE327B7F7BC0086C214 /* UserConfigV1.swift */,
+				48200BCF27B671280086C214 /* ContentV1.swift */,
+				48200BCD27B605190086C214 /* V1.swift */,
 			);
 			path = V1;
 			sourceTree = "<group>";
@@ -101,9 +170,8 @@
 		4873C0DA27B08A6A004F4126 /* Client */ = {
 			isa = PBXGroup;
 			children = (
-				4873C0E327B08C15004F4126 /* Entity */,
 				4873C0E227B08B9D004F4126 /* Rest */,
-				4873C0E127B08B6B004F4126 /* Api */,
+				4873C0E127B08B6B004F4126 /* PlanApi */,
 			);
 			path = Client;
 			sourceTree = "<group>";
@@ -129,12 +197,18 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		4873C0E127B08B6B004F4126 /* Api */ = {
+		4873C0E127B08B6B004F4126 /* PlanApi */ = {
 			isa = PBXGroup;
 			children = (
+				4873C0E327B08C15004F4126 /* Entity */,
 				481E09D527B12C790041F93A /* V1 */,
+				4875E45E27B3B2DC00F7BC5E /* JWTHeader.swift */,
+				4875E45C27B32E3D00F7BC5E /* ApiResponseErrorCreator.swift */,
+				4875E46227B4CF8A00F7BC5E /* PlanRequestParamater.swift */,
+				48200BB327B53C3A0086C214 /* PlanApi.swift */,
+				4875E46027B4C8A300F7BC5E /* PlanBaseApi.swift */,
 			);
-			path = Api;
+			path = PlanApi;
 			sourceTree = "<group>";
 		};
 		4873C0E227B08B9D004F4126 /* Rest */ = {
@@ -151,6 +225,19 @@
 		4873C0E327B08C15004F4126 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				48200BB527B53CF80086C214 /* ContentResponse.swift */,
+				48200BB727B53E050086C214 /* NoticeResponse.swift */,
+				48200BBB27B5FC4C0086C214 /* PublicProjectResponse.swift */,
+				48200BBD27B5FE0E0086C214 /* SubscriberInPublicProjectResponse.swift */,
+				48200BC327B5FF650086C214 /* TodoOnResponsibleResponse.swift */,
+				48200BC527B5FFF90086C214 /* TokenResponse.swift */,
+				48200BC727B600710086C214 /* UserConfigResponse.swift */,
+				48200BC927B601290086C214 /* UserInTodoOnResponsibleResponse.swift */,
+				48200BCB27B601770086C214 /* UserResponse.swift */,
+				48200BBF27B5FE990086C214 /* TerminalResponse.swift */,
+				48200BC127B5FECB0086C214 /* TodoOnProjectResponse.swift */,
+				48200BB927B5FBD20086C214 /* PrivateProjectResponsse.swift */,
+				48200BD127B726EA0086C214 /* VoidResponse.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -240,12 +327,41 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4875E45F27B3B2DC00F7BC5E /* JWTHeader.swift in Sources */,
+				48200BE427B7F7BC0086C214 /* UserConfigV1.swift in Sources */,
+				48200BE227B7F04B0086C214 /* UserV1.swift in Sources */,
 				4875E45827B20A8A00F7BC5E /* ResponseErrorCreator.swift in Sources */,
 				481E09D927B12D3A0041F93A /* HeaderProtocol.swift in Sources */,
+				4875E46127B4C8A300F7BC5E /* PlanBaseApi.swift in Sources */,
+				48200BD027B671280086C214 /* ContentV1.swift in Sources */,
 				4846E7B127ABE30300B3F89E /* plan_iosApp.swift in Sources */,
+				48200BB627B53CF80086C214 /* ContentResponse.swift in Sources */,
+				48200BBA27B5FBD20086C214 /* PrivateProjectResponsse.swift in Sources */,
+				48200BB427B53C3A0086C214 /* PlanApi.swift in Sources */,
+				48200BCA27B601290086C214 /* UserInTodoOnResponsibleResponse.swift in Sources */,
+				48200BE027B7EB0E0086C214 /* TodoOnResponsibleV1.swift in Sources */,
+				48200BC227B5FECB0086C214 /* TodoOnProjectResponse.swift in Sources */,
+				48200BC027B5FE990086C214 /* TerminalResponse.swift in Sources */,
+				48200BDA27B735740086C214 /* SubscriberV1.swift in Sources */,
+				48200BCC27B601770086C214 /* UserResponse.swift in Sources */,
+				48200BDC27B73B1B0086C214 /* TerminalV1.swift in Sources */,
+				48200BD227B726EA0086C214 /* VoidResponse.swift in Sources */,
+				48200BC427B5FF650086C214 /* TodoOnResponsibleResponse.swift in Sources */,
+				48200BD827B72E7D0086C214 /* PublicProjectV1.swift in Sources */,
+				48200BD627B72A980086C214 /* PrivateProjectV1.swift in Sources */,
+				48200BCE27B605190086C214 /* V1.swift in Sources */,
 				481E09D427B10EF40041F93A /* RestTemplate.swift in Sources */,
+				4875E45D27B32E3D00F7BC5E /* ApiResponseErrorCreator.swift in Sources */,
 				481E09D227B0D7240041F93A /* ErrorHandler.swift in Sources */,
+				48200BBC27B5FC4C0086C214 /* PublicProjectResponse.swift in Sources */,
+				48200BB827B53E050086C214 /* NoticeResponse.swift in Sources */,
+				48200BC627B5FFF90086C214 /* TokenResponse.swift in Sources */,
 				481E09DC27B1302F0041F93A /* DeferredFuture.swift in Sources */,
+				48200BBE27B5FE0E0086C214 /* SubscriberInPublicProjectResponse.swift in Sources */,
+				48200BC827B600710086C214 /* UserConfigResponse.swift in Sources */,
+				4875E46327B4CF8A00F7BC5E /* PlanRequestParamater.swift in Sources */,
+				48200BD427B7299A0086C214 /* NoticeV1.swift in Sources */,
+				48200BDE27B73D990086C214 /* TodoV1.swift in Sources */,
 				481E09D727B12CA20041F93A /* RequestParametersProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

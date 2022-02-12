@@ -15,39 +15,39 @@ class ResponseErrorCreator{
         }
         
         if responseData == nil{
-            return ApiError.networckError
+            return HttpError.networckError
         }
         
         if let response = response as? HTTPURLResponse {
             switch response.statusCode {
                 
             case 400:
-                return ApiError.badRequest
+                return HttpError.badRequest
             case 401:
-                return ApiError.unauthorized
+                return HttpError.unauthorized
             case 403:
-                return ApiError.forbidden
+                return HttpError.forbidden
             case 404:
-                return ApiError.notFound
+                return HttpError.notFound
             case 400...500:
-                return ApiError.clientError
+                return HttpError.clientError
             
             case 500:
-                return ApiError.internalServerError
+                return HttpError.internalServerError
             case 500...:
-                return ApiError.serverError
+                return HttpError.serverError
             
                 
             default:
-                return ApiError.unknown
+                return HttpError.unknown
             }
         }
         
-        return ApiError.unknown
+        return HttpError.unknown
     }
 }
 
-enum ApiError: Error {
+enum HttpError: Error {
     case networckError
     case notFound
     case unknown

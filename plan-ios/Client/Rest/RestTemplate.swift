@@ -14,8 +14,14 @@ class RestTemplate{
     private let encorder: JSONEncoder = JSONEncoder()
     private var responseErrorCreator: ResponseErrorCreator
     
-    init(responseErrorCreator: ResponseErrorCreator = ResponseErrorCreator()) {
+    init(responseErrorCreator: ResponseErrorCreator = ResponseErrorCreator(), dateFormatter: DateFormatter?) {
         self.responseErrorCreator = responseErrorCreator
+        
+        if let dateFormatter = dateFormatter {
+            decorder.dateDecodingStrategy = .formatted(dateFormatter)
+            encorder.dateEncodingStrategy = .formatted(dateFormatter)
+            
+        }
     }
         
     func getRequestPublisher<ResponseType: Codable>(url: String, header: Header = Header(), parameters: RequestParameters = RequestParameters()) -> AnyPublisher<ResponseType, Error>{
@@ -48,7 +54,7 @@ class RestTemplate{
             }
             var urlComponents = URLComponents(url: urlObject, resolvingAgainstBaseURL: true)!
             if method == .get {
-                urlComponents.queryItems = parameters.queryItems
+                urlComponents.queryItems = parameters.getQueryItems(encoder: self.encorder, decoder: self.decorder)
             }
             
             var request = URLRequest(url: urlComponents.url!)
