@@ -23,7 +23,7 @@ class PublicProjectV1: PlanBaseApi{
     }
     
     func getPublisher(jwtToken: String, id: Int) -> AnyPublisher<PublicProjectResponse, Error>{
-        let url = rootUrl + "/¥(id)"
+        let url = rootUrl + "/\(id)"
         
         return restTemplate.getRequestPublisher(url: url, header: JWTHeader(jwtToken))
     }
@@ -35,7 +35,7 @@ class PublicProjectV1: PlanBaseApi{
     }
     
     func putPublisher(jwtToken: String, id: Int, name: String? = nil, startDate: Date? = nil, finishDate: Date? = nil) -> AnyPublisher<VoidResponse, Error>{
-        let url = rootUrl + "/¥(id)"
+        let url = rootUrl + "/\(id)"
         
         let request = PlanRequestParamater()
         request.projectName = name
@@ -46,7 +46,7 @@ class PublicProjectV1: PlanBaseApi{
     }
     
     func deletePublisher(jwtToken: String, id: Int) -> AnyPublisher<VoidResponse, Error>{
-        let url = rootUrl + "/¥(id)"
+        let url = rootUrl + "/\(id)"
         
         return restTemplate.deleteRequestPublisher(url: url, header: JWTHeader(jwtToken))
     }
@@ -58,7 +58,7 @@ class PublicProjectV1: PlanBaseApi{
     }
     
     func postIsCompletedPublisher(jwtToken: String, id: Int, isCompleted: Bool) -> AnyPublisher<VoidResponse, Error>{
-        let url = rootUrl + "/¥(id)/is_completed"
+        let url = rootUrl + "/\(id)/is_completed"
         
         let request = PlanRequestParamater()
         request.isCompleted = isCompleted

@@ -12,11 +12,11 @@ class TodoOnResponsibleV1: PlanBaseApi{
     private let rootUrl = PlanApiURL.V1_ROOT_URL + "todo"
     
     private func createRootUrl(todoOnProjectId: Int) -> String {
-        return PlanApiURL.V1_ROOT_URL + "todo/¥(todoOnProjectId)/responsible"
+        return PlanApiURL.V1_ROOT_URL + "todo/\(todoOnProjectId)/responsible"
     }
     
     func postPublisher(jwtToken: String, todoOnProjectId: Int, userName: String) -> AnyPublisher<VoidResponse, Error>{
-        let url = createRootUrl(todoOnProjectId: todoOnProjectId) + "/¥(userName)"
+        let url = createRootUrl(todoOnProjectId: todoOnProjectId) + "/\(userName)"
         
         return restTemplate.postRequestPublisher(url: url, header: JWTHeader(jwtToken))
     }
@@ -26,7 +26,7 @@ class TodoOnResponsibleV1: PlanBaseApi{
     }
     
     func deletePublisher(jwtToken: String, todoOnProjectId: Int, userName: String) -> AnyPublisher<VoidResponse, Error>{
-        let url = createRootUrl(todoOnProjectId: todoOnProjectId) + "/¥(userName)"
+        let url = createRootUrl(todoOnProjectId: todoOnProjectId) + "/\(userName)"
         
         return restTemplate.deleteRequestPublisher(url: url, header: JWTHeader(jwtToken))
     }

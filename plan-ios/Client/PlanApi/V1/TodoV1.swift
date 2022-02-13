@@ -33,14 +33,14 @@ class TodoV1: PlanBaseApi{
         return restTemplate.getRequestPublisher(url: rootUrl, header: JWTHeader(jwtToken), parameters: request)
     }
     
-    func getPublisher(jwtToken: String, id: Int) -> AnyPublisher<TodoOnProjectResponse, error>{
-        let url = rootUrl + "/¥(id)"
+    func getPublisher(jwtToken: String, id: Int) -> AnyPublisher<TodoOnProjectResponse, Error>{
+        let url = rootUrl + "/\(id)"
         
         return restTemplate.getRequestPublisher(url: url, header: JWTHeader(jwtToken))
     }
     
     func putPublisher(jwtToken: String, id: Int, name: String? = nil, startDate: Date? = nil, finishDate: Date? = nil, isCopyContentsToUsers: Bool? = nil) -> AnyPublisher<VoidResponse, Error>{
-        let url = rootUrl + "/¥(id)"
+        let url = rootUrl + "/\(id)"
         
         let request = PlanRequestParamater()
         request.todoName = name
@@ -52,13 +52,13 @@ class TodoV1: PlanBaseApi{
     }
     
     func deletePublisher(jwtToken: String, id: Int) -> AnyPublisher<VoidResponse, Error>{
-        let url = rootUrl + "/¥(id)"
+        let url = rootUrl + "/\(id)"
         
         return restTemplate.deleteRequestPublisher(url: url, header: JWTHeader(jwtToken))
     }
     
     func putIsCompletedPublisher(jwtToken: String, id: Int, isCompleted: Bool) -> AnyPublisher<VoidResponse, Error>{
-        let url = "/¥(id)/is_completed"
+        let url = "/\(id)/is_completed"
         
         let request = PlanRequestParamater()
         request.isCompleted = isCompleted

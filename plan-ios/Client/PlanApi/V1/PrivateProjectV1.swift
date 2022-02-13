@@ -27,13 +27,13 @@ class PrivateProjectV1: PlanBaseApi{
     }
     
     func getPublisher(jwtToken: String, id: Int) -> AnyPublisher<PrivateProjectResponse, Error>{
-        let url = rootUrl + "/¥(id)"
+        let url = rootUrl + "/\(id)"
         
         return restTemplate.getRequestPublisher(url: url, header: JWTHeader(jwtToken))
     }
     
     func putPublisher(jwtToken: String, id: Int, name: String) -> AnyPublisher<VoidResponse, Error>{
-        let url = rootUrl + "/¥(id)"
+        let url = rootUrl + "/\(id)"
         
         let request = PlanRequestParamater()
         request.projectName = name
@@ -42,13 +42,13 @@ class PrivateProjectV1: PlanBaseApi{
     }
     
     func deletePublisher(jwtToken: String, id: Int) -> AnyPublisher<VoidResponse, Error>{
-        let url = rootUrl + "/¥(id)"
+        let url = rootUrl + "/\(id)"
         
         return restTemplate.deleteRequestPublisher(url: url, header: JWTHeader(jwtToken))
     }
     
     func getIsPrivatePublisher(jwtToken: String, projectId: Int) -> AnyPublisher<Bool, Error>{
-        let url = rootUrl + "/¥(projectId)/isPrivate"
+        let url = rootUrl + "/\(projectId)/isPrivate"
         
         return restTemplate.getRequestPublisher(url: url, header: JWTHeader(jwtToken))
     }

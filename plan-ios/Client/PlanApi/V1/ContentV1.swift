@@ -35,13 +35,13 @@ class ContentV1: PlanBaseApi{
     }
     
     func getPublisher(jwtToken: String, id: Int) -> AnyPublisher<ContentResponse, Error>{
-        let url = rootUrl + "/¥(id)"
+        let url = rootUrl + "/\(id)"
         
         return restTemplate.getRequestPublisher(url: url, header: JWTHeader(jwtToken))
     }
     
     func putPublisher(jwtToken: String, id: Int, title:String? = nil, explanation: String? = nil) -> AnyPublisher<VoidResponse, Error>{
-        let url = rootUrl + "/¥(id)"
+        let url = rootUrl + "/\(id)"
         
         let request = PlanRequestParamater()
         request.contentExplanation = explanation
@@ -51,13 +51,13 @@ class ContentV1: PlanBaseApi{
     }
     
     func deletePublisher(jwtToken: String, id: Int) -> AnyPublisher<VoidResponse, Error>{
-        let url = rootUrl + "/¥(id)"
+        let url = rootUrl + "/\(id)"
         
         return restTemplate.deleteRequestPublisher(url: url, header: JWTHeader(jwtToken))
     }
     
     func putIsCompletedPublisher(jwtToken: String, id: Int, isCompleted: Bool) -> AnyPublisher<VoidResponse, Error>{
-        let url = rootUrl + "/¥(id)/is_completed"
+        let url = rootUrl + "/\(id)/is_completed"
         
         let request = PlanRequestParamater()
         request.isCompleted = isCompleted

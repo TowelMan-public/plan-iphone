@@ -11,7 +11,7 @@ import Combine
 class SubscriberV1: PlanBaseApi{
     
     private func createRootUrl(publicProjectId: Int) -> String {
-        return PlanApiURL.V1_ROOT_URL + "project/¥(publicProjectId)/subscriber"
+        return PlanApiURL.V1_ROOT_URL + "project/\(publicProjectId)/subscriber"
     }
     
     func postPublisher(jwtToken: String, publicProjectId: Int, userName: String) -> AnyPublisher<VoidResponse, Error>{
