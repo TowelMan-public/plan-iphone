@@ -40,6 +40,8 @@
 		4846E7B127ABE30300B3F89E /* plan_iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4846E7B027ABE30300B3F89E /* plan_iosApp.swift */; };
 		4846E7B527ABE30500B3F89E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4846E7B427ABE30500B3F89E /* Assets.xcassets */; };
 		4846E7B827ABE30500B3F89E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4846E7B727ABE30500B3F89E /* Preview Assets.xcassets */; };
+		485C75AC27B9B7A000A523CB /* GenericPasswrodKeyChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485C75AB27B9B7A000A523CB /* GenericPasswrodKeyChain.swift */; };
+		485C75AE27BA0C2C00A523CB /* GenericPasswrodKeyChainCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485C75AD27BA0C2C00A523CB /* GenericPasswrodKeyChainCreator.swift */; };
 		4875E45827B20A8A00F7BC5E /* ResponseErrorCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4875E45727B20A8A00F7BC5E /* ResponseErrorCreator.swift */; };
 		4875E45D27B32E3D00F7BC5E /* ApiResponseErrorCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4875E45C27B32E3D00F7BC5E /* ApiResponseErrorCreator.swift */; };
 		4875E45F27B3B2DC00F7BC5E /* JWTHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4875E45E27B3B2DC00F7BC5E /* JWTHeader.swift */; };
@@ -82,6 +84,8 @@
 		4846E7B027ABE30300B3F89E /* plan_iosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = plan_iosApp.swift; sourceTree = "<group>"; };
 		4846E7B427ABE30500B3F89E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4846E7B727ABE30500B3F89E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		485C75AB27B9B7A000A523CB /* GenericPasswrodKeyChain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericPasswrodKeyChain.swift; sourceTree = "<group>"; };
+		485C75AD27BA0C2C00A523CB /* GenericPasswrodKeyChainCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericPasswrodKeyChainCreator.swift; sourceTree = "<group>"; };
 		4875E45727B20A8A00F7BC5E /* ResponseErrorCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseErrorCreator.swift; sourceTree = "<group>"; };
 		4875E45C27B32E3D00F7BC5E /* ApiResponseErrorCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResponseErrorCreator.swift; sourceTree = "<group>"; };
 		4875E45E27B3B2DC00F7BC5E /* JWTHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWTHeader.swift; sourceTree = "<group>"; };
@@ -145,6 +149,7 @@
 		4846E7AF27ABE30300B3F89E /* plan-ios */ = {
 			isa = PBXGroup;
 			children = (
+				485C75AA27B9B74600A523CB /* iphoneAdapters */,
 				4875E45927B2A99B00F7BC5E /* Utility */,
 				481E09DA27B130030041F93A /* Publishers */,
 				4873C0E427B08F6A004F4126 /* ErrorHandlers */,
@@ -165,6 +170,23 @@
 				4846E7B727ABE30500B3F89E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		485C75AA27B9B74600A523CB /* iphoneAdapters */ = {
+			isa = PBXGroup;
+			children = (
+				485C75AF27BA0D8100A523CB /* KeyChain */,
+			);
+			path = iphoneAdapters;
+			sourceTree = "<group>";
+		};
+		485C75AF27BA0D8100A523CB /* KeyChain */ = {
+			isa = PBXGroup;
+			children = (
+				485C75AD27BA0C2C00A523CB /* GenericPasswrodKeyChainCreator.swift */,
+				485C75AB27B9B7A000A523CB /* GenericPasswrodKeyChain.swift */,
+			);
+			path = KeyChain;
 			sourceTree = "<group>";
 		};
 		4873C0DA27B08A6A004F4126 /* Client */ = {
@@ -357,10 +379,12 @@
 				48200BB827B53E050086C214 /* NoticeResponse.swift in Sources */,
 				48200BC627B5FFF90086C214 /* TokenResponse.swift in Sources */,
 				481E09DC27B1302F0041F93A /* DeferredFuture.swift in Sources */,
+				485C75AC27B9B7A000A523CB /* GenericPasswrodKeyChain.swift in Sources */,
 				48200BBE27B5FE0E0086C214 /* SubscriberInPublicProjectResponse.swift in Sources */,
 				48200BC827B600710086C214 /* UserConfigResponse.swift in Sources */,
 				4875E46327B4CF8A00F7BC5E /* PlanRequestParamater.swift in Sources */,
 				48200BD427B7299A0086C214 /* NoticeV1.swift in Sources */,
+				485C75AE27BA0C2C00A523CB /* GenericPasswrodKeyChainCreator.swift in Sources */,
 				48200BDE27B73D990086C214 /* TodoV1.swift in Sources */,
 				481E09D727B12CA20041F93A /* RequestParametersProtocol.swift in Sources */,
 			);
