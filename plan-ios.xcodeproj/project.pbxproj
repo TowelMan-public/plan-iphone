@@ -42,6 +42,18 @@
 		4846E7B827ABE30500B3F89E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4846E7B727ABE30500B3F89E /* Preview Assets.xcassets */; };
 		485C75AC27B9B7A000A523CB /* GenericPasswrodKeyChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485C75AB27B9B7A000A523CB /* GenericPasswrodKeyChain.swift */; };
 		485C75AE27BA0C2C00A523CB /* GenericPasswrodKeyChainCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485C75AD27BA0C2C00A523CB /* GenericPasswrodKeyChainCreator.swift */; };
+		485C75B427BFE03400A523CB /* ValidationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485C75B327BFE03400A523CB /* ValidationManager.swift */; };
+		485C75B627BFE09900A523CB /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485C75B527BFE09900A523CB /* Validator.swift */; };
+		485C75B927BFE10D00A523CB /* Validatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485C75B827BFE10D00A523CB /* Validatable.swift */; };
+		485C75BB27BFE14B00A523CB /* SelectedInValidatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485C75BA27BFE14B00A523CB /* SelectedInValidatable.swift */; };
+		485C75BD27BFE17900A523CB /* NotBlankValidatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485C75BC27BFE17900A523CB /* NotBlankValidatable.swift */; };
+		485C75BF27BFE19F00A523CB /* NotNullValidatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485C75BE27BFE19F00A523CB /* NotNullValidatable.swift */; };
+		485C75C127BFE1D600A523CB /* RangeValidatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485C75C027BFE1D600A523CB /* RangeValidatable.swift */; };
+		485C75C327BFE1F900A523CB /* EqualValidatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485C75C227BFE1F900A523CB /* EqualValidatable.swift */; };
+		485C75C527BFE21900A523CB /* StringSizeRangeValidatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485C75C427BFE21900A523CB /* StringSizeRangeValidatable.swift */; };
+		485C75C727BFE24500A523CB /* AndValidatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485C75C627BFE24500A523CB /* AndValidatable.swift */; };
+		485C75C927BFE26400A523CB /* OrValidatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485C75C827BFE26400A523CB /* OrValidatable.swift */; };
+		485C75CB27BFE28600A523CB /* IfValidatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485C75CA27BFE28600A523CB /* IfValidatable.swift */; };
 		4875E45827B20A8A00F7BC5E /* ResponseErrorCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4875E45727B20A8A00F7BC5E /* ResponseErrorCreator.swift */; };
 		4875E45D27B32E3D00F7BC5E /* ApiResponseErrorCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4875E45C27B32E3D00F7BC5E /* ApiResponseErrorCreator.swift */; };
 		4875E45F27B3B2DC00F7BC5E /* JWTHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4875E45E27B3B2DC00F7BC5E /* JWTHeader.swift */; };
@@ -86,6 +98,18 @@
 		4846E7B727ABE30500B3F89E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		485C75AB27B9B7A000A523CB /* GenericPasswrodKeyChain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericPasswrodKeyChain.swift; sourceTree = "<group>"; };
 		485C75AD27BA0C2C00A523CB /* GenericPasswrodKeyChainCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericPasswrodKeyChainCreator.swift; sourceTree = "<group>"; };
+		485C75B327BFE03400A523CB /* ValidationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationManager.swift; sourceTree = "<group>"; };
+		485C75B527BFE09900A523CB /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
+		485C75B827BFE10D00A523CB /* Validatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validatable.swift; sourceTree = "<group>"; };
+		485C75BA27BFE14B00A523CB /* SelectedInValidatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedInValidatable.swift; sourceTree = "<group>"; };
+		485C75BC27BFE17900A523CB /* NotBlankValidatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotBlankValidatable.swift; sourceTree = "<group>"; };
+		485C75BE27BFE19F00A523CB /* NotNullValidatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotNullValidatable.swift; sourceTree = "<group>"; };
+		485C75C027BFE1D600A523CB /* RangeValidatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RangeValidatable.swift; sourceTree = "<group>"; };
+		485C75C227BFE1F900A523CB /* EqualValidatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EqualValidatable.swift; sourceTree = "<group>"; };
+		485C75C427BFE21900A523CB /* StringSizeRangeValidatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringSizeRangeValidatable.swift; sourceTree = "<group>"; };
+		485C75C627BFE24500A523CB /* AndValidatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AndValidatable.swift; sourceTree = "<group>"; };
+		485C75C827BFE26400A523CB /* OrValidatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrValidatable.swift; sourceTree = "<group>"; };
+		485C75CA27BFE28600A523CB /* IfValidatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IfValidatable.swift; sourceTree = "<group>"; };
 		4875E45727B20A8A00F7BC5E /* ResponseErrorCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseErrorCreator.swift; sourceTree = "<group>"; };
 		4875E45C27B32E3D00F7BC5E /* ApiResponseErrorCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResponseErrorCreator.swift; sourceTree = "<group>"; };
 		4875E45E27B3B2DC00F7BC5E /* JWTHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWTHeader.swift; sourceTree = "<group>"; };
@@ -149,6 +173,7 @@
 		4846E7AF27ABE30300B3F89E /* plan-ios */ = {
 			isa = PBXGroup;
 			children = (
+				485C75B227BFE01A00A523CB /* Validation */,
 				485C75AA27B9B74600A523CB /* iphoneAdapters */,
 				4875E45927B2A99B00F7BC5E /* Utility */,
 				481E09DA27B130030041F93A /* Publishers */,
@@ -187,6 +212,33 @@
 				485C75AB27B9B7A000A523CB /* GenericPasswrodKeyChain.swift */,
 			);
 			path = KeyChain;
+			sourceTree = "<group>";
+		};
+		485C75B227BFE01A00A523CB /* Validation */ = {
+			isa = PBXGroup;
+			children = (
+				485C75B727BFE0F700A523CB /* Validatable */,
+				485C75B327BFE03400A523CB /* ValidationManager.swift */,
+				485C75B527BFE09900A523CB /* Validator.swift */,
+			);
+			path = Validation;
+			sourceTree = "<group>";
+		};
+		485C75B727BFE0F700A523CB /* Validatable */ = {
+			isa = PBXGroup;
+			children = (
+				485C75B827BFE10D00A523CB /* Validatable.swift */,
+				485C75BA27BFE14B00A523CB /* SelectedInValidatable.swift */,
+				485C75BC27BFE17900A523CB /* NotBlankValidatable.swift */,
+				485C75BE27BFE19F00A523CB /* NotNullValidatable.swift */,
+				485C75C027BFE1D600A523CB /* RangeValidatable.swift */,
+				485C75C227BFE1F900A523CB /* EqualValidatable.swift */,
+				485C75C427BFE21900A523CB /* StringSizeRangeValidatable.swift */,
+				485C75C627BFE24500A523CB /* AndValidatable.swift */,
+				485C75C827BFE26400A523CB /* OrValidatable.swift */,
+				485C75CA27BFE28600A523CB /* IfValidatable.swift */,
+			);
+			path = Validatable;
 			sourceTree = "<group>";
 		};
 		4873C0DA27B08A6A004F4126 /* Client */ = {
@@ -349,32 +401,43 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				485C75B627BFE09900A523CB /* Validator.swift in Sources */,
+				485C75B427BFE03400A523CB /* ValidationManager.swift in Sources */,
+				485C75CB27BFE28600A523CB /* IfValidatable.swift in Sources */,
 				4875E45F27B3B2DC00F7BC5E /* JWTHeader.swift in Sources */,
 				48200BE427B7F7BC0086C214 /* UserConfigV1.swift in Sources */,
 				48200BE227B7F04B0086C214 /* UserV1.swift in Sources */,
 				4875E45827B20A8A00F7BC5E /* ResponseErrorCreator.swift in Sources */,
 				481E09D927B12D3A0041F93A /* HeaderProtocol.swift in Sources */,
 				4875E46127B4C8A300F7BC5E /* PlanBaseApi.swift in Sources */,
+				485C75BB27BFE14B00A523CB /* SelectedInValidatable.swift in Sources */,
 				48200BD027B671280086C214 /* ContentV1.swift in Sources */,
+				485C75BD27BFE17900A523CB /* NotBlankValidatable.swift in Sources */,
 				4846E7B127ABE30300B3F89E /* plan_iosApp.swift in Sources */,
+				485C75C727BFE24500A523CB /* AndValidatable.swift in Sources */,
 				48200BB627B53CF80086C214 /* ContentResponse.swift in Sources */,
 				48200BBA27B5FBD20086C214 /* PrivateProjectResponsse.swift in Sources */,
 				48200BB427B53C3A0086C214 /* PlanApi.swift in Sources */,
+				485C75B927BFE10D00A523CB /* Validatable.swift in Sources */,
 				48200BCA27B601290086C214 /* UserInTodoOnResponsibleResponse.swift in Sources */,
 				48200BE027B7EB0E0086C214 /* TodoOnResponsibleV1.swift in Sources */,
 				48200BC227B5FECB0086C214 /* TodoOnProjectResponse.swift in Sources */,
 				48200BC027B5FE990086C214 /* TerminalResponse.swift in Sources */,
 				48200BDA27B735740086C214 /* SubscriberV1.swift in Sources */,
 				48200BCC27B601770086C214 /* UserResponse.swift in Sources */,
+				485C75C527BFE21900A523CB /* StringSizeRangeValidatable.swift in Sources */,
 				48200BDC27B73B1B0086C214 /* TerminalV1.swift in Sources */,
 				48200BD227B726EA0086C214 /* VoidResponse.swift in Sources */,
 				48200BC427B5FF650086C214 /* TodoOnResponsibleResponse.swift in Sources */,
 				48200BD827B72E7D0086C214 /* PublicProjectV1.swift in Sources */,
+				485C75C127BFE1D600A523CB /* RangeValidatable.swift in Sources */,
 				48200BD627B72A980086C214 /* PrivateProjectV1.swift in Sources */,
 				48200BCE27B605190086C214 /* V1.swift in Sources */,
 				481E09D427B10EF40041F93A /* RestTemplate.swift in Sources */,
 				4875E45D27B32E3D00F7BC5E /* ApiResponseErrorCreator.swift in Sources */,
 				481E09D227B0D7240041F93A /* ErrorHandler.swift in Sources */,
+				485C75BF27BFE19F00A523CB /* NotNullValidatable.swift in Sources */,
+				485C75C327BFE1F900A523CB /* EqualValidatable.swift in Sources */,
 				48200BBC27B5FC4C0086C214 /* PublicProjectResponse.swift in Sources */,
 				48200BB827B53E050086C214 /* NoticeResponse.swift in Sources */,
 				48200BC627B5FFF90086C214 /* TokenResponse.swift in Sources */,
@@ -382,6 +445,7 @@
 				485C75AC27B9B7A000A523CB /* GenericPasswrodKeyChain.swift in Sources */,
 				48200BBE27B5FE0E0086C214 /* SubscriberInPublicProjectResponse.swift in Sources */,
 				48200BC827B600710086C214 /* UserConfigResponse.swift in Sources */,
+				485C75C927BFE26400A523CB /* OrValidatable.swift in Sources */,
 				4875E46327B4CF8A00F7BC5E /* PlanRequestParamater.swift in Sources */,
 				48200BD427B7299A0086C214 /* NoticeV1.swift in Sources */,
 				485C75AE27BA0C2C00A523CB /* GenericPasswrodKeyChainCreator.swift in Sources */,
